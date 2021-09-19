@@ -19,12 +19,12 @@ public class MakeChange {
 		String billAmountString = scanner.nextLine();
 		double billAmount = Double.parseDouble(billAmountString);
 
-		System.out.println("Please enter the amount tendered: ");
+		System.out.print("Please enter the amount tendered: ");
 		String tenderedAmountString = scanner.nextLine();
 		double tenderedAmount = Double.parseDouble(tenderedAmountString);
 
 		double changeAmount= tenderedAmount - billAmount;
-		System.out.println("The change required is " + changeAmount);
+		System.out.format("The change required is %.2f", changeAmount);
 
 
 	}
